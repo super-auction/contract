@@ -1,0 +1,33 @@
+{
+  "name": "auction-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:testnet": "npx hardhat run ./scripts/deploy.js --network mumbai",
+    "verify:testnet": "npx hardhat verify --network mumbai 0xBD454701f5E83304E0FfCAD1D829A49AEfeC058f"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.8",
+    "ethlint": "^1.2.5"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.4",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/hardhat-upgrades": "^1.18.1",
+    "dotenv": "^16.0.1",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.10.1",
+    "hardhat-docgen": "^1.3.0",
+    "solidity-docgen": "^0.5.17"  
+  }
+}
